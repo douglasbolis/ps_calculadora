@@ -27,6 +27,12 @@ out/
 .settings
 .springBeans
 .sts4-cache
+<<<<<<< HEAD
+=======
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+>>>>>>> 626a500 (Init a Java project with IntelliJ)
 
 ### NetBeans ###
 /nbproject/private/
@@ -34,9 +40,12 @@ out/
 /dist/
 /nbdist/
 /.nb-gradle/
+<<<<<<< HEAD
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+=======
+>>>>>>> 626a500 (Init a Java project with IntelliJ)
 
 ### VS Code ###
 .vscode/
