@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c73fd27-3754-4b3a-92a8-08dd1f160a88" name="Changes" comment="Files to remove" />
+    <list default="true" id="8c73fd27-3754-4b3a-92a8-08dd1f160a88" name="Changes" comment="Files to remove">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/controller/CalcController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/CalcModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/Dividir.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/IOperacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/Multiplicar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/Somar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/Subtrair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/view/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculadora.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ps_calculadora/calculadora/Calculadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/Calculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,30 +53,62 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/douglasbolis/ps_calculadora.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:douglasbolis/ps_calculadora.git&quot;,
     &quot;accountId&quot;: &quot;ad54f682-6653-433a-ba6f-17d8f4062d67&quot;
   }
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="jdkForImporter" value="21" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="31WZipgHfLiEmwlE2WJqZJs1uN3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Calculadora.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Calculadora.executor": "Run",
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ifes.ps.calculadora.Main" />
+      <module name="calculadora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ifes.ps.calculadora.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8c73fd27-3754-4b3a-92a8-08dd1f160a88" name="Changes" comment="" />
