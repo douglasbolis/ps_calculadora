@@ -9,11 +9,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-// import br.ifes.ps.calculadora.utils.Logs;
 import org.reflections.Reflections;
 
 public class Menu {
-    // private final Logs logger = new Logs(Menu.class);
     private final Scanner scanner = new Scanner(System.in);
     private final CalcController calculadora = new CalcController();
     private final List<String> operadores = new ArrayList<>();

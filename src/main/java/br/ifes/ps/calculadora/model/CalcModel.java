@@ -1,7 +1,5 @@
 package br.ifes.ps.calculadora.model;
 
-import br.ifes.ps.calculadora.controller.CalcController;
-import br.ifes.ps.calculadora.utils.Logs;
 import org.reflections.Reflections;
 
 import java.lang.reflect.InvocationTargetException;

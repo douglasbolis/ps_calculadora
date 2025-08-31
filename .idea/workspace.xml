@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c73fd27-3754-4b3a-92a8-08dd1f160a88" name="Changes" comment="A calculator program with MVC Pattern and Java Reflections">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/utils/Logs.java" afterDir="false" />
+    <list default="true" id="8c73fd27-3754-4b3a-92a8-08dd1f160a88" name="Changes" comment="Apply validations in Menu class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/controller/CalcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/controller/CalcController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/CalcModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/CalcModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/utils/Logs.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/view/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756681471236</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Apply validations in Menu class">
+      <option name="closed" value="true" />
+      <created>1756683724107</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756683724107</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +183,7 @@
     <MESSAGE value="Change project to Maven build" />
     <MESSAGE value="Files to remove" />
     <MESSAGE value="A calculator program with MVC Pattern and Java Reflections" />
-    <option name="LAST_COMMIT_MESSAGE" value="A calculator program with MVC Pattern and Java Reflections" />
+    <MESSAGE value="Apply validations in Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Apply validations in Menu class" />
   </component>
 </project>
