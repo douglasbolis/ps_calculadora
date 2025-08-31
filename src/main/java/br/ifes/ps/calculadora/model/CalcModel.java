@@ -1,5 +1,7 @@
 package br.ifes.ps.calculadora.model;
 
+import br.ifes.ps.calculadora.controller.CalcController;
+import br.ifes.ps.calculadora.utils.Logs;
 import org.reflections.Reflections;
 
 import java.lang.reflect.InvocationTargetException;
@@ -20,19 +22,11 @@ public class CalcModel {
         }
     }
 
-    public double calcula(String operacao, double valorA, double valorB) {
-        double resultado = 0;
+    public double calcula(String operacao, double valorA, double valorB) throws NullPointerException, ArithmeticException {
+        IOperacao operacaoCalc = this.operacoes.get(operacao);
 
-        try {
-            IOperacao operacaoCalc = this.operacoes.get(operacao);
+        if (operacaoCalc == null) throw new NullPointerException("Operação inválida!");
 
-            if (operacaoCalc == null) throw new NullPointerException("Operação inválida!");
-
-            return operacaoCalc.resolva(valorA, valorB);
-        } catch (ArithmeticException | NullPointerException error) {
-            System.out.println(error.getMessage());
-        }
-
-        return resultado;
+        return operacaoCalc.resolva(valorA, valorB);
     }
 }
