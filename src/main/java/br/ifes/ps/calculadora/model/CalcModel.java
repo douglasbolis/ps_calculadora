@@ -20,6 +20,10 @@ public class CalcModel {
         }
     }
 
+    public Map<String, IOperacao> getOperacoes() {
+        return this.operacoes;
+    }
+
     public double calcula(String operacao, double valorA, double valorB) throws NullPointerException, ArithmeticException {
         IOperacao operacaoCalc = this.operacoes.get(operacao);
 

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c73fd27-3754-4b3a-92a8-08dd1f160a88" name="Changes" comment="Apply validations in Menu class">
+    <list default="true" id="8c73fd27-3754-4b3a-92a8-08dd1f160a88" name="Changes" comment="Use System out as logging function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/controller/CalcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/controller/CalcController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/CalcModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/model/CalcModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/utils/Logs.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifes/ps/calculadora/view/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,17 +64,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Calculadora.executor": "Run",
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Calculadora.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ifes.ps.calculadora.Main" />
@@ -151,7 +151,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756683724107</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Apply validations in Menu class">
+      <option name="closed" value="true" />
+      <created>1756684001625</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756684001625</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Use System out as logging function">
+      <option name="closed" value="true" />
+      <created>1756684107729</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756684107729</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +200,7 @@
     <MESSAGE value="Files to remove" />
     <MESSAGE value="A calculator program with MVC Pattern and Java Reflections" />
     <MESSAGE value="Apply validations in Menu class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apply validations in Menu class" />
+    <MESSAGE value="Use System out as logging function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use System out as logging function" />
   </component>
 </project>

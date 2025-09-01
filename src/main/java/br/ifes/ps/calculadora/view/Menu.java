@@ -4,31 +4,31 @@ import br.ifes.ps.calculadora.controller.CalcController;
 import br.ifes.ps.calculadora.model.IOperacao;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Set;
-
-import org.reflections.Reflections;
+import java.util.*;
 
 public class Menu {
     private final Scanner scanner = new Scanner(System.in);
-    private final CalcController calculadora = new CalcController();
     private final List<String> operadores = new ArrayList<>();
+    private Map<String, IOperacao> operacoes = new HashMap<>();
+    private CalcController calculadora;
 
-    private void showMenu() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        System.out.println("Calculadora\n");
+    public Menu() {
+        try {
+            this.calculadora = new CalcController();
+            this.operacoes = this.calculadora.getOperacoes();
+        } catch (NoSuchMethodException | InvocationTargetException | InstantiationException | IllegalAccessException error) {
+            System.out.println("Ocorreu um erro ao instanciar uma das operações usando Java Reflections...");
+        }
+    }
+
+    private void showMenu() {
+        System.out.println("Calculadora Simples");
         System.out.println("Operações suportadas:");
 
-        Reflections reflections = new Reflections("br.ifes.ps.calculadora.model");
-        Set<Class<? extends IOperacao>> modelOperacoes = reflections.getSubTypesOf(IOperacao.class);
-
-        for(Class<? extends IOperacao> modelOperacao : modelOperacoes) {
-            IOperacao operacao = modelOperacao.getDeclaredConstructor().newInstance();
-            String operador = operacao.getOperador();
+        for(String operador : this.operacoes.keySet()) {
             this.operadores.add(operador);
-
-            System.out.println(operador + " => " + modelOperacao.getSimpleName());
+            IOperacao operacao = this.operacoes.get(operador);
+            System.out.println(operador + " => " + operacao.getClass().getSimpleName());
         }
 
         this.operadores.add("0");
@@ -86,8 +86,6 @@ public class Menu {
             } else {
                 System.out.println("Calculadora encerrada!");
             }
-        } catch (NoSuchMethodException | InvocationTargetException | InstantiationException | IllegalAccessException error) {
-            System.out.println("Ocorreu um erro ao instanciar uma das operações usando Java Reflections...");
         } catch (ArithmeticException | NullPointerException error) {
             System.out.println(error.getMessage());
         }
